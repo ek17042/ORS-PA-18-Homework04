@@ -15,3 +15,18 @@
 * in which your solution might not work.
 ===================================================
 """
+def evenodd():
+    a = input("Please enter an intiger value:")
+    number_of_even = 0
+    number_of_odd = 0
+    for i in range(0,len(a)):
+        if int(a[i]) % 2 == 0:
+            number_of_even += 1
+        else:
+            number_of_odd += 1
+
+    print("Number of even numbers is",number_of_even)
+    print("Number of odd numbers is",number_of_odd)
+
+
+evenodd()
