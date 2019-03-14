@@ -13,3 +13,21 @@
 * Use main() function to test your solution.
 ===================================================
 """
+def sum_digits(nr):
+    if type(nr) == "int":
+        return -1
+    nr = abs(nr)
+    x = 0
+    while nr:
+        x += nr % 10
+        nr = nr // 10
+    return x
+
+
+def main():
+
+    int_number = 1234
+    digit_sum = sum_digits(int_number)
+    print("Sum of digits for given numbers is: ", digit_sum)
+
+main()
