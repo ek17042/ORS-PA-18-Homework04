@@ -15,3 +15,16 @@
 * Use main() function to test your solution.
 ===================================================
 """
+import math
+def area_of_circle(r):
+    if type(r) != float:
+        print("The radius value must be float,try again!")
+    else:
+        x = (abs(r)**2)*math.pi
+        return x
+
+def main():
+    circle_area = area_of_circle(-2)
+    print("The area of circle is",circle_area)
+
+main()
